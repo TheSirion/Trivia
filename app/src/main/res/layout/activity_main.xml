@@ -44,20 +44,23 @@
 
     <Button
         android:id="@+id/true_button"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
         android:background="@color/colorAccent"
         android:text="@string/true_title"
+        app:layout_constraintEnd_toStartOf="@+id/false_button"
         app:layout_constraintStart_toEndOf="@+id/prev_button"
         app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
     <Button
         android:id="@+id/false_button"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
         android:background="@color/colorAccent"
         android:text="@string/false_title"
         app:layout_constraintEnd_toStartOf="@+id/next_button"
@@ -70,7 +73,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
         android:background="@color/colorAccent"
         android:contentDescription="@string/previous_button"
         app:layout_constraintStart_toStartOf="parent"
@@ -81,7 +84,7 @@
         android:id="@+id/next_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:background="@color/colorAccent"
         android:contentDescription="@string/next_button"
@@ -125,5 +128,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@color/colorAccent"
+        android:text="@string/reset"
+        app:layout_constraintEnd_toEndOf="@+id/false_button"
+        app:layout_constraintStart_toStartOf="@+id/true_button"
+        app:layout_constraintTop_toBottomOf="@+id/false_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

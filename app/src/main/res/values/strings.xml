@@ -10,5 +10,7 @@
     <string name="wrong_answer">Wrong!</string>
     <string name="score">SCORE:</string>
     <string name="highscore">HIGHSCORE:</string>
-    <string name="hey_this_is_where_we_are_going_to_add_something">Hey, this is where we are going to add something...</string>
+    <string name="hey_this_is_where_we_are_going_to_add_something">Hey, this is where we are going to add something…</string>
+    <string name="save">Save</string>
+    <string name="reset">Reset</string>
 </resources>
